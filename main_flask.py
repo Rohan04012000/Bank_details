@@ -7,7 +7,7 @@ app = Flask(__name__)
 banks_data = pd.read_csv("bank_branches.csv")
 
 #Rest Api, to fetch the details of bank based on Branch Name.
-@app.route("/get_bank_details", methods = ['POST'])
+@app.route("/get_bank_details", methods = ['GET','POST'])
 def bank_details_func():
     if request.method == "POST":
         branch_name = request.get_json().get('branch')
