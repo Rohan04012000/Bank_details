@@ -7,9 +7,9 @@ app = Flask(__name__)
 banks_data = pd.read_csv("bank_branches.csv")
 
 #Rest Api, to fetch the details of bank based on Branch Name.
-@app.route("/get_bank_details", methods = ['GET'])
+@app.route("/get_bank_details", methods = ['POST'])
 def bank_details_func():
-    if request.method == "GET":
+    if request.method == "POST":
         branch_name = request.get_json().get('branch')
 
         #if there exist a key branch and data corresponding to the key, sent through payload request.
