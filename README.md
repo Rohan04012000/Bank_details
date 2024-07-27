@@ -1,10 +1,10 @@
 # Bank_details
 This project was implemented using PyCharm, Python, Flask and Pandas. PyCharm provides a virtual environment!.
 
-## Endpoints to get the Bank List and its branch details for a specific branch, which is deployed on render.com:
+## Endpoints to get the Bank List and its branch details for a specific branch, which is deployed on render.com: (Endpoint is suspended!)
 https://bank-details-q9h7.onrender.com/get_bank_details
 
-This endpoint should be entered in Postman with the method set to GET. Navigate to the body tab, select raw and choose json from the dropdown menu.<br>
+This endpoint should be entered in Postman with the method set to POST. Navigate to the body tab, select raw and choose json from the dropdown menu.<br>
 Enter the following JSON object into the body section: <br/>
 {<br/>
     "branch":"KANJUR"<br/>
@@ -13,7 +13,7 @@ Enter the following JSON object into the body section: <br/>
 ## The sequence through which this assignment was solved is as follows:
 1. Created Flask app instance.
 2. Loaded CSV data into Pandas DataFrame.
-3. Defined a GET endpoint "/get_bank_details".
+3. Defined a POST endpoint "/get_bank_details".
 4. Checked request method.
 5. Retrieved "branch" parameter from request payload.
 6. Validated existence of branch parameter.
@@ -32,8 +32,6 @@ This code handles every possible edge cases and gives out proper response.
     "branch":"kanjur",<br/>
 }<br>
 
-
-# Time taken to complete this project was aprrox. 1-2 hours.
 
 # Detailed steps for deploying this project on an online service such as Render.com:
 ## 1. Create a requirements.txt file:
