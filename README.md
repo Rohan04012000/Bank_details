@@ -1,7 +1,7 @@
 # Bank_details
 This project was implemented using PyCharm, Python, Flask and Pandas. PyCharm provides a virtual environment!.
 
-## Endpoints to get the Bank List and its branch details for a specific branch, which is deployed on render.com: (Endpoint is suspended!)
+## Endpoints to get the Bank List and its branch details for a specific branch, which is deployed on render.com: (Endpoint is suspended! No more deployed on Render.com)
 https://bank-details-q9h7.onrender.com/get_bank_details
 
 This endpoint should be entered in Postman with the method set to POST. Navigate to the body tab, select raw and choose json from the dropdown menu.<br>
